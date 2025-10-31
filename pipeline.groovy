@@ -7,5 +7,10 @@ pipeline {
                 echo 'Hello, World!'
             }
         }
+        stage('Run hello_world.py') {
+            steps {
+            sh 'python3 hello_world.py'
+            }
+        }
     }
 }
